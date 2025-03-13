@@ -1,0 +1,19 @@
+
+  THIS WILL CREATE OUR DATABASE CONTAINER --> 
+  docker run -it \
+  -e POSTGRES_USER="root" \
+  -e POSTGRES_PASSWORD="root" \
+  -e POSTGRES_DB="ny_taxi" \
+  -v $(pwd)/ny_taxi_postgres_data:/var/lib/postgresql/data \
+  -p 5432:5432 \
+  postgres:13
+
+--> WE HAVE A VOLUME FOLDER IF EMPTY GIVE ADDITIONAL PERMISION VIA SUDO
+sudo chmod a+rwx ny_taxi_postgres_data
+
+TO INTERACT WITH THE DATABASE --> 
+pgcli -h localhost -p 5432 -u root -d ny_taxi
+
+-- which is empty as of now 
+
+--> we need to load the data using python 
