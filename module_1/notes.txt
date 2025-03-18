@@ -64,3 +64,5 @@ python data_loading.py \
       --db=ny_taxi \
       --tb=yellow_taxi_data \
       --url="https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-01.parquet"
+
+docker-compose -> up or down 
