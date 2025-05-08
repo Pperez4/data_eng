@@ -82,7 +82,7 @@ services:
     ports:
       - "5432:5432"
     volumes:
-      - zoomcamp-data:/var/lib/postgresql/data
+      - zoomcamp_data:/var/lib/postgresql/data
     depends_on:
       kestra:
         condition: service_started
