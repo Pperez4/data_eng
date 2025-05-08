@@ -1,7 +1,9 @@
-# data_eng
+# WORK FROM DATA ENG. ZOOMCAMP
+### Summary
+* Working through the course material and homework problems from data engineering zoomcamp cohort 2025
 
-*  First six weeks are about learning and practicing each part of the data engineering process.
-*  In the concluding three weeks, I will apply the acquired knowledge and skills to develop an end-to-end data pipeline from the ground up.
+- First six weeks are about learning and practicing each part of the data engineering process.
+- In the concluding three weeks, I will apply the acquired knowledge and skills to develop an end-to-end data pipeline from the ground up.
   * Week 1: Introduction & Prerequisites
   * Week 2: Workflow Orchestration
   * Week 3: Data Warehouse
