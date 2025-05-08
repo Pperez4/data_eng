@@ -73,16 +73,16 @@ services:
         condition: service_started
 
 # This is the container for the PostgreSQL database used to store our data.  
-  postgres_zoomcamp:
+  postgres-zoomcamp:
     image: postgres
     environment:
       POSTGRES_USER: kestra
       POSTGRES_PASSWORD: k3str4
-      POSTGRES_DB: postgres_zoomcamp
+      POSTGRES_DB: postgres-zoomcamp
     ports:
       - "5432:5432"
     volumes:
-      - zoomcamp_data:/var/lib/postgresql/data
+      - zoomcamp-data:/var/lib/postgresql/data
     depends_on:
       kestra:
         condition: service_started
@@ -96,5 +96,5 @@ services:
     ports:
       - "8085:80"
     depends_on:
-      postgres_zoomcamp:
+      postgres-zoomcamp:
         condition: service_started
