@@ -5,3 +5,9 @@ For this homework we will be using the Yellow Taxi Trip Records for January 2024
 
 <https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page>
 
+BIG QUERY SETUP:
+Create an external table using the Yellow Taxi Trip Records.
+
+Create a (regular/materialized) table in BQ using the Yellow Taxi Trip Records (do not partition or cluster this table)
+
+
